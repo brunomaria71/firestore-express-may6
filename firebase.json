@@ -3,12 +3,18 @@
     "public": "public",
     "rewrites": [{
       "source": "**",
-      "function": "app"
+      "function": "api"
     }],
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
+  },
+  "emulators": {
+    "hosting": {
+      "host": "localhost",
+      "port": "5051"
+    }
   }
 }
